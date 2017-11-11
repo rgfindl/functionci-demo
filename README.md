@@ -1,11 +1,5 @@
-# API Gateway proxying calls to a Lambda backend.  Optional custom domain.
-This template will create the following AWS resources:
-- Lambda to handle api calls
-- API Gateway to proxy HTTP requests to the Lambda backend
-- Certificate Manager to provide the SSL cert
-- Route53 to perform the DNS routing
-
-[![](architecture.png)](architecture.png)
+# FunctionCI Demo Project
+See: https://github.com/rgfindl/functionci
 
 # Setup
 ## Prerequisites
@@ -18,13 +12,4 @@ This template will create the following AWS resources:
 - Replace 'example.com' in _cim.yml with your domain name.
 - Run `cim stack-up`
 
-## Deploy Lambda
-`cim lambda-deploy`
-
-## dev stage
-You can also deploy a dev environment for testing.
-
-```
-cim stack-up --stage=dev
-cim deploy-lambda --stage=dev
-```
+Now you can use your FunctionCI builds to deploy to this Lambda.
